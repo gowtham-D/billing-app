@@ -1,0 +1,49 @@
+.sideNav {
+
+    /* Background and Text Colors */
+    --side-nav-background-color: var(--md-sys-color-surface); /* Background color of the side-nav */
+    --side-nav-text-color: var(--md-sys-color-on-surface); /* Default text color for navigation items */
+    --side-nav-active-text-color: var(--md-sys-color-primary); /* Text color for active navigation item */
+    --side-nav-hover-text-color: var(--md-sys-color-on-surface-variant); /* Text color on hover */
+
+    /* Active Item Background */
+    --side-nav-active-background-color: var(--md-sys-color-primary-container); /* Background color for active navigation item */
+
+    /* Spacing and Layout */
+    --side-nav-padding: 16px; /* Padding inside the side-nav */
+    --side-nav-item-padding: 12px 16px; /* Padding for each navigation item */
+
+    /* Borders and Shadows */
+    --side-nav-border-radius: 4px; /* Border radius for navigation items */
+    --side-nav-active-border-left: 4px solid var(--md-sys-color-primary); /* Left border for active navigation item */
+
+    height: 100%;
+    width: 250px;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+        box-sizing: border-box;
+    background-color: var(--side-nav-background-color);
+    padding: var(--side-nav-padding);
+}
+
+.sideNavItem {
+    color: var(--side-nav-text-color);
+    padding: var(--side-nav-item-padding);
+    border-radius: var(--side-nav-border-radius);
+    cursor: pointer;
+    box-sizing: border-box;
+    text-decoration: none !important;
+}
+
+.sideNavItem:hover {
+    color: var(--side-nav-hover-text-color);
+    border-left: var(--side-nav-active-border-left);
+}
+
+.sideNavItem.active {
+    color: var(--side-nav-active-text-color);
+    background-color: var(--side-nav-active-background-color);
+    border-left: var(--side-nav-active-border-left);
+}

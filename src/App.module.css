@@ -1,0 +1,18 @@
+.container{
+  display:flex;
+  height: 100vh;
+}
+
+.mainPanel{
+  flex: 1;
+  background:  var(--md-sys-color-surface-variant);
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.mainPanel > * {
+  display:block;
+  height: 100%;
+  border-radius: 4px;
+  background: var(--md-sys-color-surface);
+}

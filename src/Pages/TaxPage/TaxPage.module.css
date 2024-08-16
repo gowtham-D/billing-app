@@ -1,0 +1,33 @@
+
+.mainPanel{
+    padding: 0 8px;
+    gap: 8px;
+}
+
+.listHeader{
+    padding: 16px;
+    color: var(--md-sys-color-secondary);
+    border-bottom: 4px double var(--md-sys-color-primary);
+}
+
+.listHeader h3{
+    margin-right: 16px;;
+}
+
+.listBody{
+    height: calc(100vh - 110px);
+    overflow: auto;
+    scrollbar-gutter: stable;
+}
+
+.listItem{
+    font-size: 14px;
+    padding: 16px;
+    padding-right: 8px;
+    border-bottom: 1px solid var(--md-sys-color-secondary);
+}
+
+.listItemSecondary{
+    display: block;
+    margin-left:32px;
+}

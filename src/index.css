@@ -5,6 +5,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+*{
+  box-sizing: border-box;
+}
+
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -241,4 +246,12 @@ code {
 
 .preserve-whitespace{
   white-space-collapse: preserve;
+}
+
+.color-green{
+  color:green;
+}
+
+.color-red{
+  color: red;
 }

@@ -1,0 +1,33 @@
+.dialog {}
+
+.dialog.success {
+    --active-color: var(--md-sys-color-success);
+}
+
+.dialog.error {
+    --active-color: var(--md-sys-color-error);
+}
+
+.dialog.warning {
+    --active-color: var(--md-sys-color-warning);
+}
+
+.dialog.confirm {
+    --active-color : #FF9800;
+}
+
+
+.dialogTitle {
+    background: var(--active-color);
+    color: white;
+    border-bottom: 1px solid var(--active-color);
+}
+
+.dialogMessage {
+   margin-top: 16px !important;
+}
+
+.dialogFooter{
+    margin-right: 8px;
+    margin-bottom: 8px;
+}

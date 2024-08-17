@@ -10,7 +10,7 @@
     --side-nav-active-background-color: var(--md-sys-color-primary-container); /* Background color for active navigation item */
 
     /* Spacing and Layout */
-    --side-nav-padding: 16px; /* Padding inside the side-nav */
+    --side-nav-padding: 8px; /* Padding inside the side-nav */
     --side-nav-item-padding: 12px 16px; /* Padding for each navigation item */
 
     /* Borders and Shadows */
@@ -18,12 +18,11 @@
     --side-nav-active-border-left: 4px solid var(--md-sys-color-primary); /* Left border for active navigation item */
 
     height: 100%;
-    width: 250px;
-    font-size: 24px;
+    width: 200px;
     display: flex;
     flex-direction: column;
-    gap: 8px;
-        box-sizing: border-box;
+    gap: 4px;
+    box-sizing: border-box;
     background-color: var(--side-nav-background-color);
     padding: var(--side-nav-padding);
 }

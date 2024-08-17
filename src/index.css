@@ -1,8 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: Roboto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -45,11 +43,16 @@ code {
   --md-sys-color-surface-variant: #e7e0ec;
   --md-sys-color-on-surface-variant: #49454f;
 
+  --md-sys-color-success: #598234;
+  --md-sys-color-error: #b3261e;
+  --md-sys-color-warning: #dd6b20;
+
   --base-font-size: 16px;
 
   font-size: var(--base-font-size);
 }
 
+/* Typography */
 
 .h1 {
   font-size: 2.5rem;
@@ -87,48 +90,155 @@ code {
   margin: 0;
 }
 
+/* Layout */
 
-.layout-horizontal{
+.layout-horizontal {
   display: flex;
 }
 
-.layout-vertical{
+.layout-vertical {
   display: flex;
   flex-direction: column;
 }
 
-.layout-horizontal.center{
+.layout-horizontal.center {
   align-items: center;
 }
 
-.flex{
-  flex:1;
+.layout-horizontal.justified {
+  justify-content: space-between;
 }
 
-.gap-8{
-  gap:8px;
+.layout-horizontal.end-justified {
+  justify-content: flex-end;
 }
 
-.gap-16{
-  gap:16px;
+/* Flex */
+
+.flex {
+  flex: 1;
 }
 
+.flex-1 {
+  flex: 1;
+}
 
-.clickable{
+.flex-2 {
+  flex: 2;
+}
+
+.flex-3 {
+  flex: 3;
+}
+
+.flex-4 {
+  flex: 4;
+}
+
+.flex-5 {
+  flex: 5;
+}
+
+.flex-6 {
+  flex: 6;
+}
+
+.flex-7 {
+  flex: 7;
+}
+
+.flex-8 {
+  flex: 8;
+}
+
+.flex-9 {
+  flex: 9;
+}
+
+/* Margin */
+
+.margin-top8{
+  margin-top: 8px;
+}
+
+.margin-top16{
+  margin-top: 16px;
+}
+
+.margin-top20 {
+  margin-top: 20px;
+}
+
+/* Padding */
+
+.padding-8 {
+  padding: 8px;
+}
+
+.padding-16 {
+  padding: 16px;
+}
+
+.padding-h8 {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.padding-h16 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.padding-v8 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.padding-v16 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+/* Gap */
+
+.gap-8 {
+  gap: 8px;
+}
+
+.gap-16 {
+  gap: 16px;
+}
+
+.clickable {
   cursor: pointer;
 }
 
-.icon-s20{
-  width: 20px;
-  height: 20px;
+/* Scrollable */
+
+.scrollable {
+  overflow: auto;
+  scrollbar-gutter: stable;
 }
 
-.icon-s24{
-  width: 24px;
-  height: 24px;
+/* Column Layouts */
+.column-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-.icon-s30{
-  width: 30px;
-  height: 30px;
+.column-2 .full-width {
+  grid-column: 3 / 1;
+}
+
+
+/* Custom */
+.button-footer-container{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 16px;
+}
+
+.preserve-whitespace{
+  white-space-collapse: preserve;
 }
